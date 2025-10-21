@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+</head>
+
+<body>
+    <nav>
+        <img src="image/logo.jpg" alt="brand logo" class="logo">
+        <ul>
+            <li><a href="index.html">Profile Card</a></li>
+            <li><a href="contactPage/contact.html">Contact Us</a></li>
+            <li><a href="aboutPage/about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <article data-testid="test-profile-card">
+        <figure id="avatar">
+            <div id="profile-pic-div">
+                <img src="avatar-jessica.jpeg" alt="Jessica Profile Picture" data-testid="test-user-avatar"
+                    id="profile-pic">
+                <input type="file" id="profile-pic-input" accept="image/*" placeholder="Edit" />
+                <button type="submit">edit</button>
+            </div>
+            <div id="user-details">
+                <h1 data-testid="test-user-name">Jessica Thompson</h1>
+                <p data-testid="test-user-bio">
+                    Jessica Thompson is a 30 year old freelancing journalist from New York City with a passion for
+                    storytelling. With a degree from Columbia University, I have written for prominent publications like
+                    The New York Times and Rolling Stone.
+                </p>
+            </div>
+        </figure>
+
+        <section>
+            <div>
+                <h3>Hobbies:</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Photography</li>
+                    <li>Reading literary fiction</li>
+                    <li>Attending live music events</li>
+                    <li>Hiking and outdoor adventures</li>
+                    <li>Cooking new recipes</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Dislikes:</h3>
+                <ul data-testid="test-user-social-dislikes">
+                    <li>Routing tasks</li>
+                    <li>Disorganization</li>
+                    <li>Strict schedules</li>
+                    <li>Eating sea foods</li>
+                    <li>Reading in a noisy place</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <h3>My Social Links:</h3>
+            <ul data-testid="test-user-social-links">
+                <li data-testid="test-user-social-linkedIn"><a href="http://www.linkedin.com" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+                <li data-testid="test-user-social-github"><a href="http://www.github.com" target="_blank"
+                        rel="noopener noreferrer">Github</a></li>
+                <li data-testid="test-user-social-twitter"><a href="http://www.twitter.com" target="_blank"
+                        rel="noopener noreferrer">Twitter</a></li>
+                <li data-testid="test-user-social-facebook"><a href="http://www.facebook.com" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+                <li data-testid="test-user-social-instagram"><a href="http://www.instagram.com" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+            <div data-testid="test-user-time" id="display-current-time"></div>
+        </footer>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

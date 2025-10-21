@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('background3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding: 20px 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: rgba(60, 61, 58, 0.4);
+  border-radius: 20px;
+  box-shadow: 10px 5px 20px rgba(180, 180, 184, 0.2);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 12px;
+  padding: 0;
+}
+
+nav,
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+nav {
+  width: 90%;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #dae4d5, #5e839b);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav ul li {
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: bold;
+  color: #333;
+}
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+#profile-pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#profile-pic-div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+#profile-pic-input {
+  position: absolute;
+  top: 76%;
+  left: 45%;
+  width: 35px;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -50px;
+  cursor: pointer;
+  border: none;
+  background: #02a6ac;
+  color: white;
+}
+
+section h3,
+h3 {
+  margin-bottom: 10px;
+}
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  list-style: none;
+  font-size: 10px;
+}
+#display-current-time {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 400px) {
+  article {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 40px;
+    padding: 2rem 1rem;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  #avatar {
+    display: flex;
+    gap: 20px;
+  }
+
+  #profile-pic-div img {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+  }
+  #profile-pic-input {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    width: 40px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  ul li {
+    margin-left: 0;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #display-current-time {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  article {
+    width: 550px;
+    height: 600px;
+  }
+  nav {
+    width: 550px;
+    background: linear-gradient(90deg, #dae4d5, #5e839b);
+  }
+  nav ul {
+    gap: 25px;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 13px;
+    padding: 0;
+  }
+
+  #profile-pic-div img {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="container" data-testid="test-contact-form">
+        <div id="successMsg"></div>
+        <nav>
+            <img src="../image/logo.jpg" alt="brand logo" class="logo">
+            <ul>
+                <li><a href="../index.html">Profile Card</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="../aboutPage/about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <form action="#" method="POST">
+                <main>
+                    <h2>Contact Me</h2>
+                    <div data-testid="test-contact-name"><label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" title="full name">
+                    </div>
+                    <div data-testid="test-contact-email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" title="email">
+                    </div>
+                    <div data-testid="test-contact-subject">
+                        <label for="subject">Subject:</label>
+                        <input type="subject" id="subject" name="subject" placeholder="Enter your subject"
+                            title="subject">
+                    </div>
+                    <div data-testid="test-contact-message">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" title="message-content"
+                            minlength="10"></textarea>
+                    </div>
+                    <div class="warningmsg" data-testid="test-contact-error-emai"></div>
+                    <button type="submit" title="submit button" data-testid="test-contact-submit">Send Message</button>
+                </main>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
