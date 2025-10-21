@@ -14,12 +14,12 @@ profilePicInput.addEventListener('change', (e) => {
 
 
 
-// const updateTime = () => setInterval(showTime, 5000);
+const updateTime = () => setInterval(showTime, 10000);
 
 function showTime() {
     let Time = Date.now();
     document.getElementById("display-current-time").innerText = `Current Time: ${Time}`;
-    // updateTime();
+    updateTime();
 }
 
 showTime();
